@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DESCUBRA SE VOCÊ É ESTRANGEIRO</h1>
+    </header>
+
+    <h2>Coloque seu país aqui!</h2>
+    <div id="container">
+        <input type="text" id="txt1" placeholder="Digite seu país">
+        <input type="button" value="Verificar" onclick="verificar()">
+    </div>
+    <div id="result"></div>
+
+    <script>
+        function verificar() {
+        var txtg = window.document.getElementById('txt1')
+        var result = window.document.getElementById('result')
+        var v1 = txt1.value.toLowerCase()
+        if (v1 === 'brasil') {
+            result.innerHTML = `<p>Você é Brasileiro!</p>`
+        }
+        else {
+            result.innerHTML = `<p> Você é estrangeiro!</p>`
+
+        }
+    
+    }
+        
+    </script>
+</body>
+</html>
